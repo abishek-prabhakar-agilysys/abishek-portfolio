@@ -1,156 +1,235 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Abishek Prabhakar | Cloud DevOps Engineer</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Raleway', sans-serif;
-      background: #f4f7fa;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: #1e3a8a;
-      color: white;
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-    header p { font-size: 1.2rem; font-style: italic; }
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Abishek Prabhakar - Azure Cloud Engineer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+      .timeline {
+        position: relative;
+        margin: 3em auto;
+        padding-left: 30px;
+        border-left: 4px solid #4d7cfe;
+        max-width: 800px;
+      }
+      .timeline-item {
+        margin-bottom: 2.5em;
+        position: relative;
+      }
+      .timeline-icon {
+        position: absolute;
+        left: -30px;
+        top: 0;
+        background: #4d7cfe;
+        color: #fff;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 26px;
+        font-size: 14px;
+      }
+      .timeline-content {
+        padding-left: 15px;
+      }
+      .timeline h3 {
+        margin: 0 0 0.5em 0;
+        font-size: 1.2em;
+        color: #222;
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <div id="wrapper">
 
-    section {
-      padding: 3rem 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
+      <!-- Header -->
+      <header id="header" class="alt">
+        <span class="logo"><img src="images/logo.svg" alt="" /></span>
+        <h1>Abishek Prabhakar</h1>
+        <p>Azure Cloud Engineer | DevOps | Linux Enthusiast</p>
+      </header>
 
-    h2 {
-      border-left: 5px solid #1e3a8a;
-      padding-left: 1rem;
-      margin-bottom: 1.5rem;
-      color: #1e3a8a;
-    }
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li><a href="#intro" class="active">About Me</a></li>
+          <li><a href="#first">Projects</a></li>
+          <li><a href="#second">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#cta">Get in Touch</a></li>
+        </ul>
+      </nav>
 
-    .card {
-      background: white;
-      padding: 1.5rem;
-      margin-bottom: 1rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      border-radius: 10px;
-    }
+      <!-- Main -->
+      <div id="main">
 
-    .skills-list, .certs-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      list-style: none;
-      padding-left: 1rem;
-    }
-    .skills-list li, .certs-list li {
-      background: #1e3a8a;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-    }
+        <!-- Intro -->
+        <section id="intro" class="main">
+          <div class="spotlight">
+            <div class="content">
+              <header class="major">
+                <h2>Hello! I'm Abishek</h2>
+              </header>
+              <p>I’m a Cloud Engineer with 4 years of experience designing, automating, and securing cloud environments using Microsoft Azure and DevOps practices. I specialize in Linux, Kubernetes (AKS), MongoDB Atlas, CI/CD pipelines. I thrive on scripting things to perfection and keeping systems reliable and clean.</p>
+              <ul class="actions">
+                <li><a href="#first" class="button">View My Work</a></li>
+              </ul>
+            </div>
+            <span class="image"><img src="images/pic01.jpg" alt="" /></span>
+          </div>
+        </section>
 
-    footer {
-      background: #1e3a8a;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    footer a {
-      color: #90cdf4;
-      text-decoration: none;
-    }
+        <!-- Projects -->
+        <section id="first" class="main special">
+          <header class="major">
+            <h2>Featured Projects</h2>
+          </header>
+          <ul class="features">
+            <li>
+              <span class="icon solid major style1 fa-code"></span>
+              <h3>MongoDB Atlas Audit Automation</h3>
+              <p>Automated quarterly audit exports via Azure DevOps to generate clean, reliable reports for security reviews and compliance.</p>
+            </li>
+            <li>
+              <span class="icon major style3 fa-copy"></span>
+              <h3>AKS ConfigMap Extractor</h3>
+              <p>Built a Bash script to extract deployment-specific ConfigMaps and export them to CSV across namespaces — saving hours of manual work.</p>
+            </li>
+            <li>
+              <span class="icon major style5 fa-gem"></span>
+              <h3>Rancher Helm Backup Setup</h3>
+              <p>Designed daily Rancher backup strategy with Helm charts and Azure Blob Storage — ensured fast recovery with 14-day retention.</p>
+            </li>
+          </ul>
+        </section>
 
-    @media (max-width: 600px) {
-      header h1 { font-size: 2rem; }
-    }
-  </style>
-</head>
-<body>
+        <!-- Skills -->
+        <section id="second" class="main special">
+          <header class="major">
+            <h2>Skills & Tools</h2>
+            <p>I blend code with cloud, pipelines with precision,<br /> and operations with orchestration.</p>
+          </header>
+          <ul class="statistics">
+            <li class="style1">
+              <span class="icon solid fa-cloud"></span>
+              <strong>Microsoft Azure</strong>
+            </li>
+            <li class="style2">
+              <span class="icon solid fa-terminal"></span>
+              <strong>PowerShell & Bash</strong>
+            </li>
+            <li class="style3">
+              <span class="icon solid fa-database"></span>
+              <strong>MongoDB Atlas</strong>
+            </li>
+            <li class="style4">
+              <span class="icon solid fa-network-wired"></span>
+              <strong>Kubernetes / AKS</strong>
+            </li>
+            <li class="style5">
+              <span class="icon solid fa-lock"></span>
+              <strong>Linux Distributions</strong>
+            </li>
+          </ul>
+        </section>
 
-  <header>
-    <h1>Abishek Prabhakar</h1>
-    <p>Cloud DevOps Engineer | Azure & Automation Enthusiast</p>
-  </header>
+        <!-- Experience Timeline -->
+        <section id="experience" class="main special">
+          <header class="major">
+            <h2>Experience Timeline</h2>
+            <p>From cloud migrations to production-ready pipelines — my story in motion.</p>
+          </header>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-icon"><i class="fas fa-rocket"></i></div>
+              <div class="timeline-content">
+                <h3>July 2023 – Present: System Analyst at Agilysys Technologies - Chennai</h3>
+                <p>
+                  • Led AKS production upgrades and MongoDB automation efforts.<br />
+                  • Built secure and reusable Azure DevOps pipelines.<br />
+                  • Implemented Rancher backup strategy with Azure Blob/File Share.<br />
+                  • Designed DR plans and disaster recovery automation.<br />
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon"><i class="fas fa-code-branch"></i></div>
+              <div class="timeline-content">
+                <h3>October 2021 – June 2023: Associate System Analyst at Agilysys Technologies - Chennai</h3>
+                <p>
+                  • Automated CI/CD delivery to AKS with YAML pipelines.<br />
+                  • Migrated CentOS workloads to AlmaLinux across environments.<br />
+                  • Developed custom scripts in Bash and PowerShell for monitoring & backups.<br />
+                  • Enabled MongoDB Atlas automation, including transaction report extraction and failover monitoring.<br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-  <section>
-    <h2>About Me</h2>
-    <div class="card">
-      <p>Hello! I’m Abishek, a passionate Cloud Engineer with 4+ years of experience driving infrastructure automation, seamless cloud migrations, and DevOps practices across Azure and hybrid platforms.</p>
-      <p>I believe in letting life flow — calm yet precise — just like good architecture. Whether it’s scripting an elegant pipeline, automating MongoDB audits, or supporting production AKS clusters, I bring intention and heart to every deployment.</p>
+        <!-- Resume Download -->
+        <section id="resume" class="main special">
+          <header class="major">
+            <h2>Download Resume</h2>
+          </header>
+          <ul class="actions special">
+            <li><a href="Abishek-Prabhakar-Resume.pdf" class="button primary" download>📄 Download PDF</a></li>
+          </ul>
+        </section>
+
+        <!-- Contact CTA -->
+        <section id="cta" class="main special">
+          <header class="major">
+            <h2>Get in Touch</h2>
+            <p>Whether you want to collaborate, hire, or just chat cloud — I'm here!</p>
+          </header>
+          <footer class="major">
+            <ul class="actions special">
+              <li><a href="mailto:abishek0297@gmail.com" class="button primary">Email Me</a></li>
+              <li><a href="https://www.linkedin.com/in/abishek-prabhakar/" class="button">LinkedIn</a></li>
+            </ul>
+          </footer>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <section>
+          <h2>About This Site</h2>
+          <p>Built with love and clean code using the Stellar template by HTML5 UP. Customized to reflect my work in DevOps and cloud engineering.</p>
+        </section>
+        <section>
+          <h2>Contact</h2>
+          <dl class="alt">
+            <dt>Email</dt>
+            <dd><a href="mailto:abishek0297@gmail.com">abishek0297@gmail.com</a></dd>
+            <dt>GitHub</dt>
+            <dd><a href="https://github.com/cdslashabi">cdslashabi</a></dd>
+            <dt>LinkedIn</dt>
+            <dd><a href="https://www.linkedin.com/in/abishek-prabhakar/">Abishek Prabhakar</a></dd>
+          </dl>
+          <ul class="icons">
+            <li><a href="https://github.com/cdslashabi" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+            <li><a href="https://www.linkedin.com/in/abishek-prabhakar/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+          </ul>
+        </section>
+        <p class="copyright">
+          &copy; 2025 Abishek Prabhakar. Based on a design by <a href="https://html5up.net">HTML5 UP</a>.
+        </p>
+      </footer>
     </div>
-  </section>
 
-  <section>
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>Azure DevOps</li>
-      <li>AKS</li>
-      <li>GCP</li>
-      <li>Bash & PowerShell</li>
-      <li>Terraform</li>
-      <li>Python</li>
-      <li>Azure Monitor</li>
-      <li>MongoDB Atlas</li>
-      <li>CI/CD Pipelines</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>MongoDB Atlas Audit Automation</h3>
-      <p>Automated quarterly and monthly MongoDB usage reports using API scripts and Azure DevOps pipelines, improving visibility and compliance tracking.</p>
-    </div>
-    <div class="card">
-      <h3>Rancher Backup Strategy</h3>
-      <p>Designed and deployed Rancher backup solutions with daily snapshots to Azure Blob, with a robust 14-day retention policy across Dev, QA, and Prod clusters.</p>
-    </div>
-    <div class="card">
-      <h3>Azure Application Gateway Multi-Site Routing</h3>
-      <p>Configured complex wildcard and parameterized listeners for blue-green deployments across services — improving uptime and routing intelligence.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Experience</h2>
-    <div class="card">
-      <p><strong>System Analyst – Cloud Team</strong></p>
-      <p>Leading DevOps initiatives across production workloads, designing scalable cloud solutions, and providing automation support for major teams like Marriott.</p>
-    </div>
-    <div class="card">
-      <p><strong>Associate Cloud Engineer</strong></p>
-      <p>Managed critical production migrations, implemented AKS upgrade plans, and developed scripting frameworks that are now used team-wide.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Certifications</h2>
-    <ul class="certs-list">
-      <li>Microsoft Certified: Azure Fundamentals</li>
-      <li>Azure Administrator (in progress)</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <div class="card">
-      <p><strong>Email:</strong> abishek@example.com</p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/cdslashabi" target="_blank">cdslashabi</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/abishek-prabhakar" target="_blank">Abishek Prabhakar</a></p>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Abishek Prabhakar. Design inspiration from <a href="https://html5up.net" target="_blank">HTML5 UP</a>.</p>
-  </footer>
-
-</body>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
