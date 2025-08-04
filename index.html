@@ -1,86 +1,156 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Abishek Prabhakar | Cloud Engineer Portfolio</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abishek Prabhakar | Cloud DevOps Engineer</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Raleway', sans-serif;
+      background: #f4f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #1e3a8a;
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.2rem; font-style: italic; }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      border-left: 5px solid #1e3a8a;
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
+      color: #1e3a8a;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    .skills-list, .certs-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      list-style: none;
+      padding-left: 1rem;
+    }
+    .skills-list li, .certs-list li {
+      background: #1e3a8a;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    footer a {
+      color: #90cdf4;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+    }
+  </style>
 </head>
 <body>
 
-<!-- Header -->
-<header id="header">
-  <h1>Abishek Prabhakar</h1>
-  <nav>
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#cta">Get in Touch</a></li>
-    </ul>
-  </nav>
-</header>
-
-<!-- About Me Section -->
-<section id="about" class="main">
-  <div class="content">
-    <header class="major">
-      <h2>Hello! I'm Abishek</h2>
-    </header>
-    <p>I’m a Cloud Engineer with 4 years of experience designing, automating, and securing cloud environments using Microsoft Azure and DevOps practices.
-    I specialize in Linux, Kubernetes (AKS), MongoDB Atlas, CI/CD pipelines. I thrive on scripting things to perfection and keeping systems reliable and clean.</p>
-  </div>
-</section>
-
-<!-- Contact CTA -->
-<section id="cta" class="main special">
-  <header class="major">
-    <h2>Get in Touch</h2>
-    <p>Whether you want to collaborate, hire, or just chat cloud — I'm here!</p>
+  <header>
+    <h1>Abishek Prabhakar</h1>
+    <p>Cloud DevOps Engineer | Azure & Automation Enthusiast</p>
   </header>
-  <footer class="major">
-    <ul class="actions special">
-      <li><a href="mailto:abishek0297@gmail.com" class="button primary">Email Me</a></li>
-      <li><a href="https://www.linkedin.com/in/abishek-prabhakar/" class="button">LinkedIn</a></li>
-    </ul>
 
-    <!-- LinkedIn Profile Badge -->
-    <div style="margin-top: 2rem;">
-      <div class="badge-base LI-profile-badge"
-        data-locale="en_US"
-        data-size="medium"
-        data-theme="light"
-        data-type="VERTICAL"
-        data-vanity="abishek-prabhakar"
-        data-version="v1">
-        <a class="badge-base__link LI-simple-link"
-          href="https://in.linkedin.com/in/abishek-prabhakar?trk=profile-badge">
-          Abishek Prabhakar
-        </a>
-      </div>
+  <section>
+    <h2>About Me</h2>
+    <div class="card">
+      <p>Hello! I’m Abishek, a passionate Cloud Engineer with 4+ years of experience driving infrastructure automation, seamless cloud migrations, and DevOps practices across Azure and hybrid platforms.</p>
+      <p>I believe in letting life flow — calm yet precise — just like good architecture. Whether it’s scripting an elegant pipeline, automating MongoDB audits, or supporting production AKS clusters, I bring intention and heart to every deployment.</p>
     </div>
-    <!-- End LinkedIn Badge -->
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Azure DevOps</li>
+      <li>AKS</li>
+      <li>GCP</li>
+      <li>Bash & PowerShell</li>
+      <li>Terraform</li>
+      <li>Python</li>
+      <li>Azure Monitor</li>
+      <li>MongoDB Atlas</li>
+      <li>CI/CD Pipelines</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>MongoDB Atlas Audit Automation</h3>
+      <p>Automated quarterly and monthly MongoDB usage reports using API scripts and Azure DevOps pipelines, improving visibility and compliance tracking.</p>
+    </div>
+    <div class="card">
+      <h3>Rancher Backup Strategy</h3>
+      <p>Designed and deployed Rancher backup solutions with daily snapshots to Azure Blob, with a robust 14-day retention policy across Dev, QA, and Prod clusters.</p>
+    </div>
+    <div class="card">
+      <h3>Azure Application Gateway Multi-Site Routing</h3>
+      <p>Configured complex wildcard and parameterized listeners for blue-green deployments across services — improving uptime and routing intelligence.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="card">
+      <p><strong>System Analyst – Cloud Team</strong></p>
+      <p>Leading DevOps initiatives across production workloads, designing scalable cloud solutions, and providing automation support for major teams like Marriott.</p>
+    </div>
+    <div class="card">
+      <p><strong>Associate Cloud Engineer</strong></p>
+      <p>Managed critical production migrations, implemented AKS upgrade plans, and developed scripting frameworks that are now used team-wide.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <ul class="certs-list">
+      <li>Microsoft Certified: Azure Fundamentals</li>
+      <li>Azure Administrator (in progress)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="card">
+      <p><strong>Email:</strong> abishek@example.com</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/cdslashabi" target="_blank">cdslashabi</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/abishek-prabhakar" target="_blank">Abishek Prabhakar</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Abishek Prabhakar. Design inspiration from <a href="https://html5up.net" target="_blank">HTML5 UP</a>.</p>
   </footer>
-</section>
-
-<!-- Footer -->
-<footer id="footer">
-  <p>&copy; 2025 Abishek Prabhakar. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-</footer>
-
-<!-- LinkedIn Badge Script -->
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
 
 </body>
 </html>
